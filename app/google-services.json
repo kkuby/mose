@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "721455376834",
+    "firebase_url": "https://mose-cctv-default-rtdb.firebaseio.com",
+    "project_id": "mose-cctv",
+    "storage_bucket": "mose-cctv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721455376834:android:51eeb2b34c4ed647d10e5b",
+        "android_client_info": {
+          "package_name": "kaist.software.mosecctv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721455376834-kfjpg90j4k9698tmheht9mu525fco70m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBULOD6EaHqgjTAXZtRD9eYieMuOiaojws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721455376834-kfjpg90j4k9698tmheht9mu525fco70m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
