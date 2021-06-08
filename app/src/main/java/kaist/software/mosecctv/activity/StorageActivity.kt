@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
-import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.ktx.storage
 
 class StorageActivity : AppCompatActivity() {

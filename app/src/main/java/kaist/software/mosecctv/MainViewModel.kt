@@ -1,6 +1,6 @@
 package kaist.software.mosecctv
 
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.ViewModel
 import com.google.firebase.database.DatabaseReference
 
 class MainViewModel : ViewModel() {
