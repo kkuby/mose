@@ -8,16 +8,38 @@
     tools:context=".ui.dashboard.DashboardFragment">
 
     <TextView
-        android:id="@+id/text_dashboard"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/txt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:text="Visitor"
+        android:textSize="16sp"
+        android:textColor="@color/mp2_black"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/visitor_list_view"
+        app:layout_constraintTop_toBottomOf="@id/txt1"
+        app:layout_constraintBottom_toTopOf="@id/addVisitor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:listitem="@layout/item_visitor"
+        android:listSelector="@android:color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="4dp"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/addVisitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Add Visitor"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

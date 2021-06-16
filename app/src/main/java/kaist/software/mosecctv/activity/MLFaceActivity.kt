@@ -1,6 +1,7 @@
 package kaist.software.mosecctv.activity
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import android.graphics.Rect
 import android.net.Uri
@@ -19,6 +20,12 @@ import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.ViewModelProvider
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.StorageReference
+import com.google.firebase.storage.ktx.storage
 import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.face.FaceContour
 import com.google.mlkit.vision.face.FaceDetection
@@ -26,15 +33,20 @@ import com.google.mlkit.vision.face.FaceDetectorOptions
 import com.google.mlkit.vision.face.FaceLandmark
 import kaist.software.mosecctv.R
 import kaist.software.mosecctv.databinding.ActivityMlFaceBinding
+import kaist.software.mosecctv.viewmodel.MLFaceViewModel
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
+import kotlin.concurrent.schedule
 
 class MLFaceActivity : AppCompatActivity() {
 
     private var imageCapture: ImageCapture? = null
+    private var videoCapture: VideoCapture? = null
+
+    private lateinit var mlFaceViewModel: MLFaceViewModel
 
     private lateinit var outputDirectory: File
     private lateinit var cameraExecutor: ExecutorService
@@ -50,8 +62,31 @@ class MLFaceActivity : AppCompatActivity() {
     private var _process = 1
     private var _progress = 0
 
+    private var docId = ""
+    var storage: FirebaseStorage? = null
+    var ref : StorageReference? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val auth = FirebaseAuth.getInstance()
+        storage = Firebase.storage
+        ref = storage!!.reference
+
+        if(intent.hasExtra("visitorDocId")){
+            docId = intent.getStringExtra("visitorDocId").toString()
+            if(docId == null){
+                docId = "test"
+            }
+        }
+
+        mlFaceViewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(MLFaceViewModel::class.java)
+
+        mlFaceViewModel.complete.observe(this, {
+            if(it){
+                finish()
+            }
+        })
 
         binding = ActivityMlFaceBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -83,53 +118,107 @@ class MLFaceActivity : AppCompatActivity() {
             return
         }
 
-        if(_progress>=30){
-            return
+        startVideo()
+
+//
+//        if(_progress>=15){
+//            finishFace()
+//            return
+//        }
+//
+//        circle.setBackgroundResource(R.drawable.circle_green)
+//
+//        var location = 0
+//
+//        if(rotY<-5){
+//            location = 1
+//        }else if(rotY>5){
+//            location = 2
+//        }else{
+//            location = 0
+//        }
+//
+//        if(_progress<5){
+//            if(location==0){
+//                processText.text = "얼굴 인식 중 입니다."
+//                circle.setBackgroundResource(R.drawable.circle_green)
+//                _progress++
+//                progressBar.progress = _progress*3
+//                takePhoto()
+//            }else{
+//                processText.text = "정면을 바라봐 주세요."
+//                circle.setBackgroundResource(R.drawable.circle_red)
+//            }
+//        }else if(_progress>=10){
+//            processText.text = "얼굴 인식 중 입니다."
+//            if(location==2){
+//                circle.setBackgroundResource(R.drawable.circle_green)
+//                _progress++
+//                progressBar.progress = _progress*3
+//                takePhoto()
+//            }else{
+//                processText.text = "고개를 왼쪽으로 돌려주세요"
+//                circle.setBackgroundResource(R.drawable.circle_red)
+//            }
+//        }else{
+//            processText.text = "얼굴 인식 중 입니다."
+//            if(location==1){
+//                circle.setBackgroundResource(R.drawable.circle_green)
+//                _progress++
+//                progressBar.progress = _progress*3
+//                takePhoto()
+//            }else{
+//                processText.text = "고개를 오른쪽으로 돌려주세요."
+//                circle.setBackgroundResource(R.drawable.circle_red)
+//            }
+//        }
+    }
+
+    fun finishFace(){
+        if(intent.hasExtra("visitorDocId")){
+            intent.getStringExtra("visitorDocId")?.let { mlFaceViewModel.finishFace(it) }
+        }
+    }
+
+    @SuppressLint("RestrictedApi")
+    private fun takeVideo() {
+        val videoCapture = videoCapture?:return
+
+        val fileName = "4.test.mp4"
+
+        val videoFile = File(
+            outputDirectory,
+            fileName
+        )
+
+        val outputOptions = VideoCapture.OutputFileOptions.Builder(videoFile).build()
+
+        videoCapture.startRecording(outputOptions,
+            ContextCompat.getMainExecutor(this),
+            object: VideoCapture.OnVideoSavedCallback{
+                override fun onVideoSaved(outputFileResults: VideoCapture.OutputFileResults) {
+
+                    val savedUri = Uri.fromFile(videoFile)
+
+                    val msg = "Video recording succeeded: $savedUri"
+                    //Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
+                    Log.d(TAG, msg)
+
+                    Log.d(TAG, outputFileResults.toString())
+
+                    val uploadTask = ref?.child("user_dataset/${fileName}")?.putFile(savedUri)
+                }
+
+                override fun onError(videoCaptureError: Int, message: String, cause: Throwable?) {
+                    Log.e(TAG, "Video recording failed: ${message}")
+                }
+
+            })
+
+        Timer("recordStop", false).schedule(3000){
+            videoCapture.stopRecording()
         }
 
-        circle.setBackgroundResource(R.drawable.circle_green)
-
-        var location = 0
-
-        if(rotY<-5){
-            location = 1
-        }else if(rotY>5){
-            location = 2
-        }else{
-            location = 0
-        }
-
-        if(_progress<10){
-            processText.text = "정면을 바라봐 주세요."
-            if(location==0){
-                circle.setBackgroundResource(R.drawable.circle_green)
-                _progress++
-                progressBar.progress = _progress*3
-                takePhoto()
-            }else{
-                circle.setBackgroundResource(R.drawable.circle_red)
-            }
-        }else if(_progress>=20){
-            processText.text = "고개를 왼쪽으로 돌려주세요."
-            if(location==2){
-                circle.setBackgroundResource(R.drawable.circle_green)
-                _progress++
-                progressBar.progress = _progress*3
-                takePhoto()
-            }else{
-                circle.setBackgroundResource(R.drawable.circle_red)
-            }
-        }else{
-            processText.text = "고개를 오른쪽으로 돌려주세요."
-            if(location==1){
-                circle.setBackgroundResource(R.drawable.circle_green)
-                _progress++
-                progressBar.progress = _progress*3
-                takePhoto()
-            }else{
-                circle.setBackgroundResource(R.drawable.circle_red)
-            }
-        }
     }
 
     private fun takePhoto() {
@@ -144,7 +233,7 @@ class MLFaceActivity : AppCompatActivity() {
 //            ).format(System.currentTimeMillis()) + ".jpg"
 //        )
 
-        var fileName = "k_"
+        var fileName = docId
         if(_progress<10){
             fileName+= "0$_progress.jpg"
         }else{
@@ -175,8 +264,54 @@ class MLFaceActivity : AppCompatActivity() {
                     val msg = "Photo capture succeeded: $savedUri"
                     //Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
                     Log.d(TAG, msg)
+                    val storage = Firebase.storage
+                    var ref = storage.reference
+
+                    val uploadTask = ref.child("user_dataset/${fileName}").putFile(savedUri)
+
                 }
             })
+    }
+
+    private fun startVideo(){
+        val cameraProviderFuture = ProcessCameraProvider.getInstance(this)
+
+        cameraProviderFuture.addListener(Runnable {
+            // Used to bind the lifecycle of cameras to the lifecycle owner
+            val cameraProvider: ProcessCameraProvider = cameraProviderFuture.get()
+
+            // Preview
+            val preview = Preview.Builder()
+                .build()
+                .also {
+                    it.setSurfaceProvider(previewView.surfaceProvider)
+                }
+
+            // Select back camera as a default
+            val cameraSelector = CameraSelector.DEFAULT_FRONT_CAMERA
+
+            //video
+            videoCapture = VideoCapture.Builder()
+                .build()
+
+            try {
+                // Unbind use cases before rebinding
+                cameraProvider.unbindAll()
+
+                // Bind use cases to camera
+                cameraProvider.bindToLifecycle(
+                    this, cameraSelector, preview, videoCapture
+                )
+
+                Timer("recordStart", false).schedule(1000){
+                    takeVideo()
+                }
+
+            } catch (exc: Exception) {
+                Log.e(TAG, "Use case binding failed", exc)
+            }
+
+        }, ContextCompat.getMainExecutor(this))
     }
 
     private fun startCamera() {
@@ -204,6 +339,10 @@ class MLFaceActivity : AppCompatActivity() {
 
             // Select back camera as a default
             val cameraSelector = CameraSelector.DEFAULT_FRONT_CAMERA
+
+            //video
+            videoCapture = VideoCapture.Builder()
+                .build()
 
             try {
                 // Unbind use cases before rebinding
@@ -345,7 +484,7 @@ class MLFaceActivity : AppCompatActivity() {
                                 lastAnalysisTime = now
                             }
                             .addOnFailureListener { e ->
-                                listener(Rect(0,0,0,0), 0f, 0f)
+                                //listener(Rect(0,0,0,0), 0f, 0f)
                             }
                     imageProxy.close()
                 }

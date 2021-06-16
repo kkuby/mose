@@ -59,7 +59,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging-ktx'
     implementation 'com.google.firebase:firebase-inappmessaging-display'
     implementation 'com.google.firebase:firebase-crashlytics-gradle:2.7.0'
-    implementation 'com.google.firebase:firebase-messaging-directboot:20.2.0'
+    implementation 'com.google.firebase:firebase-messaging-directboot:22.0.0'
+    implementation 'com.firebaseui:firebase-ui-storage:6.4.0'
 
     implementation 'com.google.mlkit:face-detection:16.1.1'
     implementation 'com.google.android.gms:play-services-mlkit-face-detection:16.1.7'
@@ -84,5 +85,5 @@ dependencies {
 // CameraX Lifecycle Library
     implementation "androidx.camera:camera-lifecycle:$camerax_version"
 // CameraX View class
-    implementation "androidx.camera:camera-view:1.0.0-alpha24"
+    implementation "androidx.camera:camera-view:1.0.0-alpha25"
 }
