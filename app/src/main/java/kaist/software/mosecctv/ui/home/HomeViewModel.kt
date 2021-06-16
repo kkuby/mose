@@ -23,15 +23,31 @@ class HomeViewModel : ViewModel() {
 
     private val list = ArrayList<LogData>()
 
-    val logDoc = db.collection("CCTV_History")
-        .get()
-        .addOnSuccessListener { documents ->
-            for(document in documents){
-                val logData = document.toObject<LogData>()
-                logData.docId = document.id
-                list.add(0,logData)
-            }
+    init {
+        getCCTVHistory()
 
-            _logDataList.value = list
-        }
+        val logSnap = db.collection("CCTV_History")
+            .addSnapshotListener { value, error ->
+                if(value!=null){
+                    getCCTVHistory()
+                }
+            }
+    }
+
+
+    private fun getCCTVHistory(){
+        val logDoc = db.collection("CCTV_History")
+            .get()
+            .addOnSuccessListener { documents ->
+                list.clear()
+                for(document in documents){
+                    val logData = document.toObject<LogData>()
+                    if(logData.id == 2L){
+                        list.add(0,logData)
+                    }
+                }
+
+                _logDataList.value = list
+            }
+    }
 }

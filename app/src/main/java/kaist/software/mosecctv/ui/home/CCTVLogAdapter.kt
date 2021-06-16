@@ -26,6 +26,7 @@ abstract class CCTVLogAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() 
     lateinit var onItemClickListener: OnItemClickListener
 
     fun setLogDataList(logDataList: List<LogData>) {
+        this.logDataList.clear()
         this.logDataList.addAll(logDataList)
         notifyDataSetChanged()
     }
