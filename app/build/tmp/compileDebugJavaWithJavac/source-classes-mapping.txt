@@ -1,0 +1,28 @@
+kaist/software/mosecctv/databinding/ActivityMlFaceBinding.java
+ kaist.software.mosecctv.databinding.ActivityMlFaceBinding
+kaist/software/mosecctv/databinding/FragmentHomeBinding.java
+ kaist.software.mosecctv.databinding.FragmentHomeBinding
+kaist/software/mosecctv/databinding/FragmentDashboardBinding.java
+ kaist.software.mosecctv.databinding.FragmentDashboardBinding
+kaist/software/mosecctv/databinding/ItemAudioFileBinding.java
+ kaist.software.mosecctv.databinding.ItemAudioFileBinding
+kaist/software/mosecctv/databinding/ActivityRealtimeBinding.java
+ kaist.software.mosecctv.databinding.ActivityRealtimeBinding
+kaist/software/mosecctv/BuildConfig.java
+ kaist.software.mosecctv.BuildConfig
+kaist/software/mosecctv/databinding/ItemLogBinding.java
+ kaist.software.mosecctv.databinding.ItemLogBinding
+kaist/software/mosecctv/databinding/ActivityMainBinding.java
+ kaist.software.mosecctv.databinding.ActivityMainBinding
+kaist/software/mosecctv/databinding/DialogLogViewBinding.java
+ kaist.software.mosecctv.databinding.DialogLogViewBinding
+kaist/software/mosecctv/databinding/FragmentNotificationsBinding.java
+ kaist.software.mosecctv.databinding.FragmentNotificationsBinding
+kaist/software/mosecctv/databinding/ItemVisitorBinding.java
+ kaist.software.mosecctv.databinding.ItemVisitorBinding
+kaist/software/mosecctv/databinding/ActivityLogViewBinding.java
+ kaist.software.mosecctv.databinding.ActivityLogViewBinding
+kaist/software/mosecctv/databinding/DialogVisitorBinding.java
+ kaist.software.mosecctv.databinding.DialogVisitorBinding
+kaist/software/mosecctv/databinding/ActivityWebViewBinding.java
+ kaist.software.mosecctv.databinding.ActivityWebViewBinding
