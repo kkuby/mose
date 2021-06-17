@@ -1,54 +1,54 @@
 [
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_log_view.xml",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/activity_log_view.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_audio_file.xml",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\item_audio_file.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_visitor.xml",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/item_visitor.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_web_view.xml",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\activity_web_view.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_realtime.xml",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/activity_realtime.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_visitor.xml",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\item_visitor.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/activity_main.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_realtime.xml",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\activity_realtime.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_log_view.xml",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/dialog_log_view.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_home.xml",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/fragment_home.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_log_view.xml",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\activity_log_view.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/dialog_visitor.xml",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/dialog_visitor.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_log.xml",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\item_log.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_web_view.xml",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/activity_web_view.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_dashboard.xml",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\fragment_dashboard.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_dashboard.xml",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/fragment_dashboard.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_notifications.xml",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\fragment_notifications.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_ml_face.xml",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/activity_ml_face.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_log.xml",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/item_log.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_visitor.xml",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\dialog_visitor.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_notifications.xml",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/fragment_notifications.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_log_view.xml",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\dialog_log_view.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_audio_file.xml",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/item_audio_file.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ml_face.xml",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\activity_ml_face.xml"
     }
 ]

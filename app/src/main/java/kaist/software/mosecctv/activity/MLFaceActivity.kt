@@ -187,7 +187,7 @@ class MLFaceActivity : AppCompatActivity() {
     private fun takeVideo() {
         val videoCapture = videoCapture?:return
 
-        val fileName = "4.test.mp4"
+        val fileName = "6.landscape.mp4"
 
         val videoFile = File(
             outputDirectory,
@@ -389,7 +389,7 @@ class MLFaceActivity : AppCompatActivity() {
         private const val TAG = "CameraXBasic"
         private const val FILENAME_FORMAT = "yyyy-MM-dd-HH-mm-ss-SSS"
         private const val REQUEST_CODE_PERMISSIONS = 10
-        private val REQUIRED_PERMISSIONS = arrayOf(Manifest.permission.CAMERA)
+        private val REQUIRED_PERMISSIONS = arrayOf(Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO)
     }
 
     override fun onRequestPermissionsResult(

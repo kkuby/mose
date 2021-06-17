@@ -4,10 +4,10 @@ kaist/software/mosecctv/databinding/FragmentHomeBinding.java
  kaist.software.mosecctv.databinding.FragmentHomeBinding
 kaist/software/mosecctv/databinding/FragmentDashboardBinding.java
  kaist.software.mosecctv.databinding.FragmentDashboardBinding
-kaist/software/mosecctv/databinding/ItemAudioFileBinding.java
- kaist.software.mosecctv.databinding.ItemAudioFileBinding
 kaist/software/mosecctv/databinding/ActivityRealtimeBinding.java
  kaist.software.mosecctv.databinding.ActivityRealtimeBinding
+kaist/software/mosecctv/databinding/ItemAudioFileBinding.java
+ kaist.software.mosecctv.databinding.ItemAudioFileBinding
 kaist/software/mosecctv/BuildConfig.java
  kaist.software.mosecctv.BuildConfig
 kaist/software/mosecctv/databinding/ItemLogBinding.java

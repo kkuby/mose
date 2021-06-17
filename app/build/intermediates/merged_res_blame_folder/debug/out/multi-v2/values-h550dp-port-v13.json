@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/Users/kkuby/.gradle/caches/transforms-2/files-2.1/202d951e923062d70c08c70cd058712c/material-1.4.0-beta01/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\kkuby\\.gradle\\caches\\transforms-2\\files-2.1\\3e651d392dab2cdb83fa645fd63f5a8a\\material-1.4.0-beta01\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

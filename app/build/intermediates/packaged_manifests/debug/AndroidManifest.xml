@@ -55,8 +55,9 @@
             android:resource="@color/mp2_yellow" />
 
         <activity
-            android:name="kaist.software.mosecctv.MainActivity"
-            android:label="@string/app_name" >
+            android:name="kaist.software.mosecctv.activity.MLFaceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -64,7 +65,6 @@
             </intent-filter>
         </activity>
         <activity android:name="kaist.software.mosecctv.activity.WebViewActivity" />
-        <activity android:name="kaist.software.mosecctv.activity.MLFaceActivity" />
 
         <service
             android:name="kaist.software.mosecctv.base.NotificationService"

@@ -1,12 +1,12 @@
-#Wed Jun 16 17:45:14 KST 2021
+#Wed Jun 16 22:00:08 KST 2021
 path.3=classes3.dex
 path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex
-base.3=/Users/kkuby/Documents/dev/mose/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
-base.2=/Users/kkuby/Documents/dev/mose/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.1=/Users/kkuby/Documents/dev/mose/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
-base.0=/Users/kkuby/Documents/dev/mose/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.3=C\:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+base.2=C\:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.1=C\:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.0=C\:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex

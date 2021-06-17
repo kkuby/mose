@@ -1,210 +1,210 @@
 [
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_baseline_people_alt_24.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/build/generated/res/pngs/debug/drawable-hdpi/ic_baseline_people_alt_24.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_log_view.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\dialog_log_view.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_baseline_people_alt_24.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/build/generated/res/pngs/debug/drawable-ldpi/ic_baseline_people_alt_24.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\ic_notifications_black_24dp.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/layout_item_visitor.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/item_visitor.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_connection_state.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\connection_state.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/activity_main.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_ic_home_black_24dp.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/ic_home_black_24dp.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/fragment_home.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_circle_green.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/circle_green.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bottom_line_gray.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\bottom_line_gray.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/layout_activity_realtime.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/activity_realtime.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_log.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\item_log.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/layout_activity_ml_face.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/activity_ml_face.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_visitor.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\item_visitor.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/layout_dialog_visitor.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/dialog_visitor.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_item_visitor.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\item_visitor.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_ic_baseline_videocam_24.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/ic_baseline_videocam_24.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_gray.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\circle_gray.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_people_alt_24.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_people_alt_24.png"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_baseline_people_alt_24.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_baseline_people_alt_24.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_people_alt_24.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_people_alt_24.png"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_ic_notifications_black_24dp.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/ic_notifications_black_24dp.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_item_log_normal.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\item_log_normal.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_red.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\circle_red.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_green.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\circle_green.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_ic_baseline_more_horiz_24.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/ic_baseline_more_horiz_24.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_audio_file.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\item_audio_file.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_log_view.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\activity_log_view.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/layout_fragment_dashboard.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/fragment_dashboard.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_baseline_people_alt_24.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_baseline_people_alt_24.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_more_horiz_24.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\ic_baseline_more_horiz_24.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_item_selector.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/item_selector.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_item_log_normal.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/item_log_normal.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_people_alt_24.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_people_alt_24.png"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_bottom_line_gray.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/bottom_line_gray.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_realtime.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\activity_realtime.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/menu_bottom_nav_menu.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/menu/bottom_nav_menu.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_connection_state.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/connection_state.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_web_view.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\activity_web_view.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_ic_dashboard_black_24dp.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/ic_dashboard_black_24dp.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/layout_activity_log_view.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/activity_log_view.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_audiotrack_24.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\ic_baseline_audiotrack_24.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_baseline_people_alt_24.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_baseline_people_alt_24.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_people_alt_24.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_people_alt_24.png"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_people_alt_24.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_people_alt_24.png"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_ic_baseline_audiotrack_24.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/ic_baseline_audiotrack_24.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_baseline_people_alt_24.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/build/generated/res/pngs/debug/drawable-mdpi/ic_baseline_people_alt_24.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_circle_red.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/circle_red.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/navigation_mobile_navigation.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/navigation/mobile_navigation.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_notifications.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\fragment_notifications.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_item_log_warning.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/item_log_warning.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_people_alt_24.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_people_alt_24.png"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/layout_fragment_notifications.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/fragment_notifications.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_ic_baseline_person_24.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/ic_baseline_person_24.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_dashboard.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\fragment_dashboard.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_baseline_people_alt_24.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_baseline_people_alt_24.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_videocam_24.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\ic_baseline_videocam_24.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ml_face.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\activity_ml_face.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_item_visitor.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/item_visitor.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/layout_item_log.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/item_log.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\ic_dashboard_black_24dp.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/layout_dialog_log_view.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/dialog_log_view.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/layout_activity_web_view.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/activity_web_view.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/layout_item_audio_file.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/layout/item_audio_file.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_visitor.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\layout\\dialog_visitor.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_item_log_warning.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\item_log_warning.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\drawable_item_selector.xml.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\drawable\\item_selector.xml"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_baseline_people_alt_24.png.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_baseline_people_alt_24.png"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/res/merged/debug/drawable_circle_gray.xml.flat",
-        "source": "/Users/kkuby/Documents/dev/mose/app/src/main/res/drawable/circle_gray.xml"
+        "merged": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     }
 ]
