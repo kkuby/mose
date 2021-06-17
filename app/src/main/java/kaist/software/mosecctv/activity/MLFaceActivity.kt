@@ -31,6 +31,8 @@ import com.google.mlkit.vision.face.FaceContour
 import com.google.mlkit.vision.face.FaceDetection
 import com.google.mlkit.vision.face.FaceDetectorOptions
 import com.google.mlkit.vision.face.FaceLandmark
+import io.reactivex.Observable
+import io.reactivex.observers.DisposableObserver
 import kaist.software.mosecctv.R
 import kaist.software.mosecctv.databinding.ActivityMlFaceBinding
 import kaist.software.mosecctv.viewmodel.MLFaceViewModel
@@ -39,6 +41,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
+import java.util.concurrent.TimeUnit
 import kotlin.concurrent.schedule
 
 class MLFaceActivity : AppCompatActivity() {
@@ -63,7 +66,7 @@ class MLFaceActivity : AppCompatActivity() {
     private var _progress = 0
 
     private var docId = ""
-    var storage: FirebaseStorage? = null
+    private var storage: FirebaseStorage? = null
     var ref : StorageReference? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -217,6 +220,10 @@ class MLFaceActivity : AppCompatActivity() {
 
         Timer("recordStop", false).schedule(3000){
             videoCapture.stopRecording()
+        }
+
+        val source = Observable.interval(100L, TimeUnit.MILLISECONDS).map {
+
         }
 
     }

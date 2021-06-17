@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
-import kaist.software.mosecctv.ui.dashboard.VisitorData
+import kaist.software.mosecctv.ui.visitor.VisitorData
 
 class MLFaceViewModel : ViewModel() {
 

@@ -1,7 +1,6 @@
 package kaist.software.mosecctv.base
 
 import android.content.Context
-import android.content.DialogInterface
 import android.util.TypedValue
 import android.view.View
 import android.widget.*
@@ -13,7 +12,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kaist.software.mosecctv.R
 import kaist.software.mosecctv.databinding.DialogVisitorBinding
-import kaist.software.mosecctv.ui.dashboard.VisitorData
+import kaist.software.mosecctv.ui.visitor.VisitorData
 import kotlin.math.roundToInt
 
 class VisitorDialog(context: Context, private var visitorData: VisitorData) : AppCompatDialog(context) {

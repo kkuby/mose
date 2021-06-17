@@ -1,4 +1,4 @@
-package kaist.software.mosecctv.ui.dashboard
+package kaist.software.mosecctv.ui.visitor
 
 class VisitorData {
     var thumbnail: String? = null

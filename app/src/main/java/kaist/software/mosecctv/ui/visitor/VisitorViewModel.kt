@@ -1,14 +1,13 @@
-package kaist.software.mosecctv.ui.dashboard
+package kaist.software.mosecctv.ui.visitor
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
-import com.google.firebase.firestore.ktx.toObjects
 import com.google.firebase.ktx.Firebase
 
-class DashboardViewModel : ViewModel() {
+class VisitorViewModel : ViewModel() {
 
     private val _visitorDataList = MutableLiveData<List<VisitorData>>()
 

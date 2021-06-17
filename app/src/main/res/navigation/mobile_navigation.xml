@@ -12,9 +12,15 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="kaist.software.mosecctv.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_visitor"
+        android:name="kaist.software.mosecctv.ui.visitor.VisitorFragment"
+        android:label="@string/title_visitor"
+        tools:layout="@layout/fragment_visitor" />
+
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="kaist.software.mosecctv.ui.more.MoreFragment"
+        android:label="@string/title_more"
+        tools:layout="@layout/fragment_more" />
 
 </navigation>

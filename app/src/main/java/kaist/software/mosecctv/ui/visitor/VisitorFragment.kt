@@ -1,6 +1,5 @@
-package kaist.software.mosecctv.ui.dashboard
+package kaist.software.mosecctv.ui.visitor
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,14 +9,12 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kaist.software.mosecctv.activity.MLFaceActivity
-import kaist.software.mosecctv.activity.WebViewActivity
 import kaist.software.mosecctv.base.VisitorDialog
 import kaist.software.mosecctv.databinding.FragmentDashboardBinding
 
-class DashboardFragment : Fragment() {
+class VisitorFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: DashboardViewModel
+    private lateinit var visitorViewModel: VisitorViewModel
 
     private lateinit var binding: FragmentDashboardBinding
     private lateinit var visitorListView: RecyclerView
@@ -29,8 +26,8 @@ class DashboardFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        dashboardViewModel =
-                ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(DashboardViewModel::class.java)
+        visitorViewModel =
+                ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(VisitorViewModel::class.java)
 
         binding = FragmentDashboardBinding.inflate(inflater)
         visitorListView = binding.visitorListView
@@ -56,7 +53,7 @@ class DashboardFragment : Fragment() {
             }
         }
 
-        dashboardViewModel.visitorDataList.observe(viewLifecycleOwner, {
+        visitorViewModel.visitorDataList.observe(viewLifecycleOwner, {
             visitorAdapter.setVisitorDataList(it)
         })
 
