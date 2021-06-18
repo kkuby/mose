@@ -12,7 +12,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kaist.software.mosecctv.R
 import kaist.software.mosecctv.databinding.DialogVisitorBinding
-import kaist.software.mosecctv.ui.visitor.VisitorData
+import kaist.software.mosecctv.data.VisitorData
 import kotlin.math.roundToInt
 
 class VisitorDialog(context: Context, private var visitorData: VisitorData) : AppCompatDialog(context) {
@@ -28,6 +28,12 @@ class VisitorDialog(context: Context, private var visitorData: VisitorData) : Ap
     private var group = 0L
     private var scheduleList = ArrayList<Long>()
     private var selectedSchedule = 0L
+
+    interface OnCreateClickListener{
+        fun onCreateClick(visitorData: VisitorData, )
+    }
+
+    lateinit var onCreateClickListener: OnCreateClickListener
 
     init {
         setCancelable(true)
@@ -99,23 +105,12 @@ class VisitorDialog(context: Context, private var visitorData: VisitorData) : Ap
         update = binding.update
 
         update.setOnClickListener {
+
             visitorData.group = this.group
             visitorData.name = this.name.editText?.text.toString()
             visitorData.schedule = this.selectedSchedule
-            if(visitorData.docId==null){
-                db.collection("Visitor_android")
-                    .add(visitorData)
-                    .addOnSuccessListener {
-                        visitorData.docId = it.id
-                        db.collection("Visitor_android")
-                            .document(it.id)
-                            .set(visitorData)
-                    }
-            }else{
-                db.collection("Visitor_android")
-                    .document(visitorData.docId!!)
-                    .set(visitorData)
-            }
+
+            onCreateClickListener.onCreateClick(visitorData)
 
             dismiss()
 

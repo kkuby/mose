@@ -1,4 +1,4 @@
-package kaist.software.mosecctv.ui.visitor
+package kaist.software.mosecctv.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
+import kaist.software.mosecctv.data.VisitorData
 import kaist.software.mosecctv.databinding.ItemVisitorBinding
 
 class VisitorAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -55,11 +56,8 @@ class VisitorAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             1L->viewHolder.group.text="블랙리스트"
         }
         when(visitorData.state){
-            0L-> viewHolder.state.text="얼굴 인식 완료"
-            1L->viewHolder.state.text="얼굴 인식 대기"
-            2L->viewHolder.state.text="얼굴 인식 학습중"
-            3L->viewHolder.state.text="얼굴 인식 학습 완료"
-            9L->viewHolder.state.text="사진 미등록"
+            0L-> viewHolder.state.text="얼굴 인식 대기"
+            1L->viewHolder.state.text="얼굴 인식 완료"
         }
         viewHolder.itemView.setOnClickListener {
             onItemClickListener.onItemClick(visitorData)

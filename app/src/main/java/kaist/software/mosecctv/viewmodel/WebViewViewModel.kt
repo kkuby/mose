@@ -1,16 +1,13 @@
 package kaist.software.mosecctv.viewmodel
 
-import android.util.Log
-import androidx.browser.customtabs.CustomTabsIntent
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.ktx.storage
-import kaist.software.mosecctv.base.AudioData
+import kaist.software.mosecctv.data.AudioData
 
 class WebViewViewModel : ViewModel() {
     private val _url = MutableLiveData<String>()

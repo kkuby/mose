@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
-import kaist.software.mosecctv.ui.visitor.VisitorData
+import kaist.software.mosecctv.data.VisitorData
 
 class MLFaceViewModel : ViewModel() {
 
@@ -16,30 +16,38 @@ class MLFaceViewModel : ViewModel() {
 
     private val db = Firebase.firestore
 
-    fun finishFace(visitorDocId:String){
-        val visitorDoc = db.collection("Visitor_android")
-            .document(visitorDocId)
-            .get()
+    init {
+
+    }
+
+    fun createVisitor(visitorData: VisitorData){
+        db.collection("Visitor_android")
+            .add(visitorData)
             .addOnSuccessListener {
-
-                if(it != null){
-                    var vDoc = it.toObject<VisitorData>()
-                    if (vDoc != null) {
-                        vDoc.thumbnail = "${vDoc.docId}01.jpg"
-                        val again = vDoc.docId?.let { it1 ->
-                            db.collection("Visitor_android")
-                                .document(it1)
-                                .set(vDoc)
-                                .addOnSuccessListener {
-                                    val cctvDoc = db.collection("cctv")
-                                        .document("Control_Train")
-                                        .update("state", 1)
-                                    _complete.value = true
-                                }
-                        }
+                visitorData.docId = it.id
+                db.collection("Visitor_android")
+                    .document(visitorData.docId!!)
+                    .set(visitorData)
+                    .addOnSuccessListener {
+                        db.collection("sequence")
+                            .document("VisitorId")
+                            .get()
+                            .addOnSuccessListener {
+                                val id= it.get("id") as Long
+                                db.collection("sequence")
+                                    .document("VisitorId")
+                                    .update("id", id+1)
+                                    .addOnSuccessListener {
+                                        db.collection("cctv")
+                                            .document("Control_Train")
+                                            .update(hashMapOf<String, Any>("state" to 1, "file_name" to "${visitorData.fileName}"))
+                                            .addOnSuccessListener {
+                                                _complete.value = true
+                                            }
+                                    }
+                            }
                     }
-                }
-
             }
     }
+
 }

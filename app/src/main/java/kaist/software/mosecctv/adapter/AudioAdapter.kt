@@ -1,9 +1,10 @@
-package kaist.software.mosecctv.base
+package kaist.software.mosecctv.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import kaist.software.mosecctv.data.AudioData
 import kaist.software.mosecctv.databinding.ItemAudioFileBinding
 
 class AudioAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -21,12 +22,13 @@ class AudioAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     lateinit var onItemClickListener: OnItemClickListener
 
     fun setAudioDataList(audioDataList: List<AudioData>) {
+        this.audioDataList.clear()
         this.audioDataList.addAll(audioDataList)
         notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return AudioAdapter.ViewHolder(
+        return ViewHolder(
             ItemAudioFileBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
@@ -36,7 +38,7 @@ class AudioAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        val viewHolder: AudioAdapter.ViewHolder = holder as AudioAdapter.ViewHolder
+        val viewHolder: ViewHolder = holder as ViewHolder
         val p = viewHolder.adapterPosition
 
         val audioData = this.audioDataList[position]

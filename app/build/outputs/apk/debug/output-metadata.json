@@ -5,7 +5,7 @@
     "kind": "Directory"
   },
   "applicationId": "kaist.software.mosecctv",
-  "variantName": "processDebugResources",
+  "variantName": "debug",
   "elements": [
     {
       "type": "SINGLE",

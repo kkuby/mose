@@ -1,13 +1,12 @@
-package kaist.software.mosecctv.ui.home
+package kaist.software.mosecctv.adapter
 
-import android.util.SparseBooleanArray
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import kaist.software.mosecctv.R
 import kaist.software.mosecctv.databinding.ItemLogBinding
+import kaist.software.mosecctv.data.LogData
 
 abstract class CCTVLogAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 

@@ -1,4 +1,4 @@
-package kaist.software.mosecctv.ui.visitor
+package kaist.software.mosecctv.data
 
 class VisitorData {
     var thumbnail: String? = null
@@ -9,4 +9,5 @@ class VisitorData {
     var state: Long? = null
 
     var docId: String? = null
+    var fileName: String? = null
 }

@@ -9,13 +9,11 @@ import android.widget.TextView
 import android.widget.VideoView
 import androidx.appcompat.app.AppCompatDialog
 import com.bumptech.glide.Glide
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 import kaist.software.mosecctv.databinding.DialogLogViewBinding
-import kaist.software.mosecctv.ui.home.LogData
-import kotlin.math.log
+import kaist.software.mosecctv.data.LogData
 
 class LogViewDialog(context: Context, private var logData: LogData) : AppCompatDialog(context) {
     private var binding: DialogLogViewBinding

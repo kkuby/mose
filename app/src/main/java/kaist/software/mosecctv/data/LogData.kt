@@ -1,4 +1,4 @@
-package kaist.software.mosecctv.ui.home
+package kaist.software.mosecctv.data
 
 class LogData() {
     var dt: String? = null

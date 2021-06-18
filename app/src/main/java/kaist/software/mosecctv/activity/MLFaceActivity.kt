@@ -9,8 +9,6 @@ import android.os.Bundle
 import android.os.SystemClock
 import android.util.Log
 import android.view.View
-import android.view.WindowManager
-import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
@@ -27,17 +25,14 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.ktx.storage
 import com.google.mlkit.vision.common.InputImage
-import com.google.mlkit.vision.face.FaceContour
 import com.google.mlkit.vision.face.FaceDetection
 import com.google.mlkit.vision.face.FaceDetectorOptions
-import com.google.mlkit.vision.face.FaceLandmark
 import io.reactivex.Observable
-import io.reactivex.observers.DisposableObserver
 import kaist.software.mosecctv.R
+import kaist.software.mosecctv.data.VisitorData
 import kaist.software.mosecctv.databinding.ActivityMlFaceBinding
 import kaist.software.mosecctv.viewmodel.MLFaceViewModel
 import java.io.File
-import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
@@ -65,9 +60,10 @@ class MLFaceActivity : AppCompatActivity() {
     private var _process = 1
     private var _progress = 0
 
-    private var docId = ""
     private var storage: FirebaseStorage? = null
     var ref : StorageReference? = null
+
+    private lateinit var visitorData: VisitorData
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -76,11 +72,10 @@ class MLFaceActivity : AppCompatActivity() {
         storage = Firebase.storage
         ref = storage!!.reference
 
-        if(intent.hasExtra("visitorDocId")){
-            docId = intent.getStringExtra("visitorDocId").toString()
-            if(docId == null){
-                docId = "test"
-            }
+        if(intent.hasExtra("visitorId")){
+            visitorData = VisitorData()
+            visitorData.visitorID = intent.getLongExtra("visitorId",-1)
+            visitorData.name = intent.getStringExtra("visitorName")
         }
 
         mlFaceViewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(MLFaceViewModel::class.java)
@@ -123,71 +118,13 @@ class MLFaceActivity : AppCompatActivity() {
 
         startVideo()
 
-//
-//        if(_progress>=15){
-//            finishFace()
-//            return
-//        }
-//
-//        circle.setBackgroundResource(R.drawable.circle_green)
-//
-//        var location = 0
-//
-//        if(rotY<-5){
-//            location = 1
-//        }else if(rotY>5){
-//            location = 2
-//        }else{
-//            location = 0
-//        }
-//
-//        if(_progress<5){
-//            if(location==0){
-//                processText.text = "얼굴 인식 중 입니다."
-//                circle.setBackgroundResource(R.drawable.circle_green)
-//                _progress++
-//                progressBar.progress = _progress*3
-//                takePhoto()
-//            }else{
-//                processText.text = "정면을 바라봐 주세요."
-//                circle.setBackgroundResource(R.drawable.circle_red)
-//            }
-//        }else if(_progress>=10){
-//            processText.text = "얼굴 인식 중 입니다."
-//            if(location==2){
-//                circle.setBackgroundResource(R.drawable.circle_green)
-//                _progress++
-//                progressBar.progress = _progress*3
-//                takePhoto()
-//            }else{
-//                processText.text = "고개를 왼쪽으로 돌려주세요"
-//                circle.setBackgroundResource(R.drawable.circle_red)
-//            }
-//        }else{
-//            processText.text = "얼굴 인식 중 입니다."
-//            if(location==1){
-//                circle.setBackgroundResource(R.drawable.circle_green)
-//                _progress++
-//                progressBar.progress = _progress*3
-//                takePhoto()
-//            }else{
-//                processText.text = "고개를 오른쪽으로 돌려주세요."
-//                circle.setBackgroundResource(R.drawable.circle_red)
-//            }
-//        }
-    }
-
-    fun finishFace(){
-        if(intent.hasExtra("visitorDocId")){
-            intent.getStringExtra("visitorDocId")?.let { mlFaceViewModel.finishFace(it) }
-        }
     }
 
     @SuppressLint("RestrictedApi")
     private fun takeVideo() {
         val videoCapture = videoCapture?:return
 
-        val fileName = "6.landscape.mp4"
+        val fileName = "${visitorData.visitorID}.${visitorData.name}.mp4"
 
         val videoFile = File(
             outputDirectory,
@@ -210,10 +147,13 @@ class MLFaceActivity : AppCompatActivity() {
                     Log.d(TAG, outputFileResults.toString())
 
                     val uploadTask = ref?.child("user_dataset/${fileName}")?.putFile(savedUri)
+                    visitorData.fileName = fileName
+                    mlFaceViewModel.createVisitor(visitorData)
                 }
 
                 override fun onError(videoCaptureError: Int, message: String, cause: Throwable?) {
                     Log.e(TAG, "Video recording failed: ${message}")
+                    startCamera()
                 }
 
             })
@@ -222,62 +162,11 @@ class MLFaceActivity : AppCompatActivity() {
             videoCapture.stopRecording()
         }
 
-        val source = Observable.interval(100L, TimeUnit.MILLISECONDS).map {
-
+        val source = Observable.interval(90L, TimeUnit.MILLISECONDS).map {
+            _progress+=3
+            progressBar.progress = _progress
         }
 
-    }
-
-    private fun takePhoto() {
-        // Get a stable reference of the modifiable image capture use case
-        val imageCapture = imageCapture ?: return
-
-        // Create time-stamped output file to hold the image
-//        val photoFile = File(
-//            outputDirectory,
-//            SimpleDateFormat(
-//                FILENAME_FORMAT, Locale.KOREA
-//            ).format(System.currentTimeMillis()) + ".jpg"
-//        )
-
-        var fileName = docId
-        if(_progress<10){
-            fileName+= "0$_progress.jpg"
-        }else{
-            fileName+= "$_progress.jpg"
-        }
-
-        val photoFile = File(
-            outputDirectory,
-            fileName
-        )
-
-
-        // Create output options object which contains file + metadata
-        val outputOptions = ImageCapture.OutputFileOptions.Builder(photoFile).build()
-
-        // Set up image capture listener, which is triggered after photo has
-        // been taken
-        imageCapture.takePicture(
-            outputOptions,
-            ContextCompat.getMainExecutor(this),
-            object : ImageCapture.OnImageSavedCallback {
-                override fun onError(exc: ImageCaptureException) {
-                    Log.e(TAG, "Photo capture failed: ${exc.message}", exc)
-                }
-
-                override fun onImageSaved(output: ImageCapture.OutputFileResults) {
-                    val savedUri = Uri.fromFile(photoFile)
-                    val msg = "Photo capture succeeded: $savedUri"
-                    //Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
-                    Log.d(TAG, msg)
-                    val storage = Firebase.storage
-                    var ref = storage.reference
-
-                    val uploadTask = ref.child("user_dataset/${fileName}").putFile(savedUri)
-
-                }
-            })
     }
 
     private fun startVideo(){
@@ -396,6 +285,7 @@ class MLFaceActivity : AppCompatActivity() {
         requestCode: Int, permissions: Array<String>, grantResults:
         IntArray
     ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode == REQUEST_CODE_PERMISSIONS) {
             if (allPermissionsGranted()) {
                 startCamera()
@@ -418,6 +308,7 @@ class MLFaceActivity : AppCompatActivity() {
         private val INVALID_TIME = -1
         private var lastAnalysisTime = INVALID_TIME.toLong()
 
+        @SuppressLint("UnsafeOptInUsageError")
         override fun analyze(imageProxy: ImageProxy) {
 
             val mediaImage = imageProxy.image
@@ -458,29 +349,6 @@ class MLFaceActivity : AppCompatActivity() {
                                     val rotZ = face.headEulerAngleZ // Head is tilted sideways rotZ degrees
 
                                     listener(bounds, rotY, rotZ)
-
-                                    //Log.d(TAG, "bounds = $bounds, rotY = $rotY, rotZ = $rotZ")
-
-
-                                    // If landmark detection was enabled (mouth, ears, eyes, cheeks, and
-                                    // nose available):
-//                                    val leftEar = face.getLandmark(FaceLandmark.LEFT_EAR)
-//                                    leftEar?.let {
-//                                        val leftEarPos = leftEar.position
-//                                        Log.d(TAG, "leftEar = $leftEar")
-//                                    }
-//
-//                                    // If contour detection was enabled:
-//                                    val leftEyeContour = face.getContour(FaceContour.LEFT_EYE)?.points
-//                                    val upperLipBottomContour = face.getContour(FaceContour.UPPER_LIP_BOTTOM)?.points
-//
-//                                    // If classification was enabled:
-//                                    if (face.smilingProbability != null) {
-//                                        val smileProb = face.smilingProbability
-//                                    }
-//                                    if (face.rightEyeOpenProbability != null) {
-//                                        val rightEyeOpenProb = face.rightEyeOpenProbability
-//                                    }
 
                                     // If face tracking was enabled:
                                     if (face.trackingId != null) {

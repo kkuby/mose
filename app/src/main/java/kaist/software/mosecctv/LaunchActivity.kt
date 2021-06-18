@@ -24,15 +24,15 @@ class LaunchActivity : AppCompatActivity() {
 
         val isLogin = sharedPref.getBoolean("isLogin", false)
 
-        var intent: Intent? = null
-
-        if(isLogin){
-            intent = Intent(this, MainActivity::class.java)
+        val intent: Intent = if(isLogin){
+            Intent(this, MainActivity::class.java)
         }else{
-            intent = Intent(this, InitActivity::class.java)
+            Intent(this, InitActivity::class.java)
         }
 
-        Timer("launch",false).schedule(3000){
+        Timer("launch",false).schedule(2000){
+
+
             startActivity(intent)
         }
 

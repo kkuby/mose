@@ -1,12 +1,10 @@
 package kaist.software.mosecctv.activity
 
 import android.os.Bundle
-import android.os.Message
 import android.view.View
 import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import android.widget.Adapter
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
@@ -14,8 +12,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kaist.software.mosecctv.base.AudioAdapter
-import kaist.software.mosecctv.base.AudioData
+import kaist.software.mosecctv.adapter.AudioAdapter
+import kaist.software.mosecctv.data.AudioData
 import kaist.software.mosecctv.databinding.ActivityWebViewBinding
 import kaist.software.mosecctv.viewmodel.WebViewViewModel
 

@@ -1,17 +1,13 @@
 package kaist.software.mosecctv.ui.home
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
-import java.util.*
-import java.util.stream.Collectors
+import kaist.software.mosecctv.data.LogData
 import kotlin.collections.ArrayList
-import kotlin.math.log
 
 class HomeViewModel : ViewModel() {
 

@@ -1957,6 +1957,7 @@ id asConfigured
 id async
 id audio
 id audio_list_view
+id audio_management
 id audio_title
 id auto
 id autoComplete
@@ -1990,6 +1991,8 @@ id cancel_action
 id cancel_button
 id card_content_root
 id card_root
+id cctv_list
+id cctv_management
 id center
 id center_horizontal
 id center_vertical
@@ -2014,6 +2017,7 @@ id collapse_button
 id comment
 id compatible
 id confirm_button
+id connection
 id connectionState
 id connection_state
 id container
@@ -2117,6 +2121,7 @@ id image_view
 id info
 id invisible
 id inward
+id ip
 id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
@@ -2133,8 +2138,11 @@ id listMode
 id list_item
 id log_date
 id log_list_view
+id log_management
 id log_message
 id log_title
+id login
+id logout
 id masked
 id material_clock_display
 id material_clock_face
@@ -2206,9 +2214,10 @@ id navigation_bar_item_icon_view
 id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
-id navigation_dashboard
 id navigation_header_container
 id navigation_home
+id navigation_more
+id navigation_visitor
 id never
 id noScroll
 id none
@@ -2341,7 +2350,6 @@ id textTop
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
-id text_notifications
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -2374,6 +2382,7 @@ id update
 id useLogo
 id video
 id videoView
+id video_management
 id video_view
 id viewFinder
 id view_layout
@@ -2461,9 +2470,12 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_init
+layout activity_launch
 layout activity_log_view
 layout activity_main
 layout activity_ml_face
+layout activity_pairing
 layout activity_realtime
 layout activity_web_view
 layout banner
@@ -2490,11 +2502,12 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_log_view
 layout dialog_visitor
-layout fragment_dashboard
 layout fragment_home
-layout fragment_notifications
+layout fragment_more
+layout fragment_visitor
 layout image
 layout item_audio_file
+layout item_cctv
 layout item_log
 layout item_visitor
 layout material_chip_input_combo
@@ -2719,9 +2732,9 @@ string path_password_strike_through
 string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
-string title_dashboard
 string title_home
-string title_notifications
+string title_more
+string title_visitor
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

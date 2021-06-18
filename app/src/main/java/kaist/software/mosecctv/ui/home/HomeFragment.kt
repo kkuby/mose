@@ -1,11 +1,9 @@
 package kaist.software.mosecctv.ui.home
 
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.VideoView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -15,10 +13,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.ktx.storage
-import kaist.software.mosecctv.R
-import kaist.software.mosecctv.base.LogViewDialog
+import kaist.software.mosecctv.adapter.CCTVLogAdapter
+import kaist.software.mosecctv.data.LogData
 import kaist.software.mosecctv.databinding.FragmentHomeBinding
-import java.io.File
 
 class HomeFragment : Fragment() {
 

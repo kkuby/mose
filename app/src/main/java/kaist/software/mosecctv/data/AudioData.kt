@@ -1,4 +1,4 @@
-package kaist.software.mosecctv.base
+package kaist.software.mosecctv.data
 
 class AudioData {
     var cmd: Boolean? = null

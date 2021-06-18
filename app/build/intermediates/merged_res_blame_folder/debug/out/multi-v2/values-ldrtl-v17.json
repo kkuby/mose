@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\kkuby\\StudioProjects\\mose\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+            "outputFile": "/Users/kkuby/Documents/dev/mose/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kkuby\\.gradle\\caches\\transforms-2\\files-2.1\\3e651d392dab2cdb83fa645fd63f5a8a\\material-1.4.0-beta01\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "/Users/kkuby/.gradle/caches/transforms-2/files-2.1/e249f69ed09a2d834792344a8ef84828/material-1.4.0-beta01/res/values-ldrtl-v17/values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
